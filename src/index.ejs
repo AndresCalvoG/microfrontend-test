@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Root Config</title>
+  <title>Iniciar sesion en Instaleap Control Tower</title>
 
   <!--
     Remove this if you only support browsers that support async/await.
@@ -47,8 +47,12 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@odin-microfrontends-app/root-config": "//localhost:9000/odin-microfrontends-app-root-config.js"
+        "@odin-microfrontends-app/root-config": "//localhost:9000/odin-microfrontends-app-root-config.js",
+        "@odin-microfrontends-app/mf-loggin": "//localhost:8500/team-odin-mf-loggin.js",
+        "@odin-microfrontends-app/mf-menu":"//localhost:8600/team-odin-mf-menu.js"
       }
     }
   </script>
